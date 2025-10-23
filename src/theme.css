@@ -1,0 +1,42 @@
+/* Theme variables for dark and light modes */
+:root {
+  --bg: linear-gradient(135deg, #667eea, #764ba2);
+  --text: #ffffff;
+  --muted: rgba(255,255,255,0.85);
+  --accent: #ffd166;
+  --btn-google: #DB4437;
+  --btn-github: #333;
+  --btn-logout: #ff4757;
+  --btn-surface: rgba(255,255,255,0.06);
+  --shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+:root[data-theme='light'] {
+  --bg: linear-gradient(135deg, #f0f2f5, #e6eef8);
+  --text: #0b1b2b;
+  --muted: rgba(11,27,43,0.7);
+  --accent: #667eea;
+  --btn-google: #DB4437;
+  --btn-github: #111;
+  --btn-logout: #d64545;
+  --btn-surface: rgba(11,27,43,0.06);
+  --shadow: 0 6px 18px rgba(2,6,23,0.06);
+}
+
+:root[data-theme='dark'] {
+  --bg: linear-gradient(135deg, #0f1724, #1e293b);
+  --text: #e6eef8;
+  --muted: rgba(230,238,248,0.75);
+  --accent: #9b7bff;
+  --btn-surface: rgba(255,255,255,0.04);
+  --shadow: 0 6px 18px rgba(2,6,23,0.6);
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+button { font-family: inherit; }
